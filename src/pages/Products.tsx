@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Header from "../components/header";
+import Header from "../components/Header";
 import { Container } from "reactstrap";
 import ProductsList from "../components/ProductsList";
 import { GetStaticProps, NextPage } from "next";
