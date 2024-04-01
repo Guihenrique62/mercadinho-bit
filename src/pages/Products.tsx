@@ -1,10 +1,23 @@
 import Head from "next/head";
-import { Inter } from "next/font/google";
-import Header from "@/components/header";
+import Header from "../components/header";
+import { Container } from "reactstrap";
+import ProductsList from "../components/ProductsList";
+import { GetStaticProps, NextPage } from "next";
+import { fetchProducts, ProductType } from "../services/products";
+import { ReactNode } from "react";
 
-const inter = Inter({ subsets: ["latin"] });
+export const getStaticProps: GetStaticProps = async () => {
+  const products = await fetchProducts()
 
-export default function Products() {
+  return { props: { products }}
+}
+
+
+
+const Products: NextPage = (props: {
+  children?: ReactNode
+  products?: ProductType[]
+}) => {
   return (
     <>
       <Head>
@@ -15,11 +28,16 @@ export default function Products() {
       </Head>
 
       <Header />
-      
+
       <main>
-        <div>Mercadinho bit</div>
-        <p>produtos:</p>
+        <Container className="mb-5">
+          <h1 className="my-5">Nossos Produtos</h1>
+
+          {<ProductsList products={props.products!}/>}
+        </Container>
       </main>
     </>
   );
 }
+
+export default Products

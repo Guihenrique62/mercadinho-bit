@@ -1,6 +1,8 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import Header from "@/components/header";
+import Header from "../components/header";
+import { Button, Container } from "reactstrap";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,8 +19,18 @@ export default function Home() {
     <Header/>
 
       <main >
-        <div>Mercadinho bit</div>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quos commodi soluta perspiciatis, veritatis unde aliquid, exercitationem dignissimos omnis repellat minus sunt illo ullam deserunt, accusantium minima ex illum? Expedita?</p>
+        <Container className="py-5 text-center">
+          <h1 className="mt-5 display-1">O melhor Jeito de Compar o que você ama</h1>
+          <p className="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis officiis modi, animi culpa id sit earum fuga, vitae quam autem voluptates! Dolores, natus maxime. Sint quaerat illo omnis saepe nam.</p>
+        
+          <Link href="/Products">
+            <Button color="dark" className="px-4 pb-2">
+              Conheça Nossos Produtos!
+            </Button>
+          </Link>
+
+        </Container>
+
       </main>
     </>
   );

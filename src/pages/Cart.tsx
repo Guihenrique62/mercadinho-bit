@@ -1,8 +1,5 @@
 import Head from "next/head";
-import { Inter } from "next/font/google";
-import Header from "@/components/header";
-
-const inter = Inter({ subsets: ["latin"] });
+import Header from "../components/header";
 
 export default function Cart() {    
   return (
@@ -18,6 +15,7 @@ export default function Cart() {
       <main>
         <div>Mercadinho bit</div>
         <p>Carrinho:</p>
+        
       </main>
     </>
   );

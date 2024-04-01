@@ -126,5 +126,61 @@
      "price": 5099.00,
      "imageUrl": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-nike-s7-digitalmat-gallery-1-202203_GEO_BR?wid=600&hei=500&fmt=png-alpha&.v=1646429070532",
      "inStock": 50
-   }
+   },
+   {
+    "id": 17,
+    "name": "iPad Pro",
+    "description": "A experiência definitiva em iPad. Agora com o desempenho fora de série do chip M1, uma tela XDR impressionante e conexão celular 5G ultrarrápida. Prepare-se.",
+    "price": 10391.00,
+    "imageUrl": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipadpro11-digitalmat-gallery-1-202111_GEO_BR?wid=600&hei=500&fmt=png-alpha&.v=1635806350000",
+    "inStock": 50
+  },
+  {
+    "id": 18,
+    "name": "iPad Air",
+    "description": "Cor e potência no ar. O poderoso chip M1 da Apple está aqui. Câmera frontal ultra-angular de 12 MP com Palco Central. 5G ultrarrápido. Compatível com Apple Pencil e Magic Keyboard. Cinco cores lindas.",
+    "price": 6799.00,
+    "imageUrl": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-card-40-air-202203?wid=600&hei=500&fmt=p-jpg&qlt=95&.v=1644963446761",
+    "inStock": 50
+  },
+  {
+    "id": 19,
+    "name": "iPad",
+    "description": "Cheio de potência. Fácil de usar. Versátil. O novo iPad foi criado para fazer tudo o que você ama. Trabalhe, jogue, crie, aprenda, conecte-se e vá além. Tudo isso por menos do que você imagina.",
+    "price": 3848.00,
+    "imageUrl": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-card-40-ipad-202109?wid=600&hei=500&fmt=p-jpg&qlt=95&.v=1630640992000",
+    "inStock": 50
+  },
+  {
+    "id": 20,
+    "name": "iPad mini",
+    "description": "Novo design todo tela. O poderoso chip A15 Bionic. 5G ultrarrápido. Suporte para Apple Pencil. Em quatro cores que você vai querer muito. Incrível como ele só.",
+    "price": 5695.00,
+    "imageUrl": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-card-40-ipad-mini-202109?wid=600&hei=500&fmt=p-jpg&qlt=95&.v=1630457637000",
+    "inStock": 50
+  },
+  {
+    "id": 21,
+    "name": "Apple Watch Series 7",
+    "description": "Tela à vista. A maior e mais avançada tela até hoje. O Apple Watch mais resistente de todos. Inovações revolucionárias para sua saúde. Recarga até 33% mais rápida. Caixas de alumínio em cinco cores.",
+    "price": 5099.00,
+    "imageUrl": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-s7-digitalmat-gallery-1-202203_GEO_BR?wid=600&hei=500&fmt=png-alpha&.v=1646033514786",
+    "inStock": 50
+  },
+  {
+    "id": 22,
+    "name": "Apple Watch SE",
+    "description": "É muito Apple Watch por menos. Recursos poderosos para ajudar você a levar uma vida mais conectada, ativa, saudável e em segurança. Sensores avançados para acompanhar suas atividades e registrar seus exercícios favoritos. E, com conexão celular, você pode sair sem o telefone1. O Apple Watch SE é muito para gostar por menos do que você imagina.",
+    "price": 3655.00,
+    "imageUrl": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-card-40-se-202203_GEO_BR?wid=600&hei=500&fmt=p-jpg&qlt=95&.v=1646239532017",
+    "inStock": 50
+  },
+  {
+    "id": 23,
+    "name": "Apple Watch Nike",
+    "description": "Feito para você se mover. O Apple Watch Nike com o app Nike Run Club é seu parceiro de corrida definitivo. O novo mostrador Nike se mexe com você. Os gráficos de ritmo e as sequências agora aparecem diretamente no app Nike Run Club. E isso é só o começo. O Apple Watch Nike tem uma maratona de recursos para você melhorar seus treinos, seus tempos e suas corridas. Disponível nos modelos Apple Watch Series 7 e Apple Watch SE",
+    "price": 5099.00,
+    "imageUrl": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-nike-s7-digitalmat-gallery-1-202203_GEO_BR?wid=600&hei=500&fmt=png-alpha&.v=1646429070532",
+    "inStock": 50
+  }
  ]
