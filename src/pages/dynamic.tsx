@@ -14,29 +14,21 @@ export const getServerSideProps: GetServerSideProps = async () =>{
    const serverSideData: ApiResponse = await fetch(`${process.env.NEXT_PUBLIC_APIURL}/api/hello`).then(res => res.json())
 
    //Retorna as Props para o componente
-   return {
-      props: {
-         serverSideData
-      }
-   }
-
+   return { props: {serverSideData} }
 }
-
 
 const Dynamic: NextPage = (props: {
    children?: ReactNode
    serverSideData?: ApiResponse
 }) => {
-
-   //Utiliza o useEffect padrao do React para renderizar os dados da API
-
    const [clientSideData, setClientSideData] = useState<ApiResponse>()
-   
+
    //Função para consultar a API e inserir os dados no State
    const fetchData = async () => {
       const data = await fetch("api/hello").then(res => res.json())
       setClientSideData(data)
    }
+   //Utiliza o useEffect padrao do React para renderizar os dados da API
    useEffect(()=>{
       fetchData()
    }, [])
@@ -48,12 +40,9 @@ const Dynamic: NextPage = (props: {
          <Row>
             <Col>
                <h3>Gerado no Servidor:</h3>
-               <h2>
-                  {props.serverSideData?.timestamp.toString()}
-               </h2>
+               <h2>{props.serverSideData?.timestamp.toString()}</h2>
             </Col>
-
-
+            
             <Col>
                <h3>Gerado no Cliente:</h3>
                <h2>{clientSideData?.timestamp.toString()}</h2>
