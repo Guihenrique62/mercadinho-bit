@@ -4,6 +4,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { useState } from "react"
 import SuccsessToast from "./SuccessToast"
+import { useCart } from "../hooks/useCart"
 
 
 
@@ -15,6 +16,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 
    const [toastIsOpen, setToastIsOpen] = useState(false)
    const {id, name, imageUrl, price} = product
+   const { addProduct } = useCart()
    return (
 
       <>
@@ -33,6 +35,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                </CardSubtitle>
 
                <Button color="dar" className="pb-2" block onClick={()=>{
+                  addProduct(product)
                   setToastIsOpen(true)
                   setTimeout(()=> setToastIsOpen(false), 1000 * 3)
                }}>

@@ -1,5 +1,8 @@
 import Head from "next/head";
 import Header from "../components/Header";
+import { Container } from "reactstrap";
+import CartTable from "../components/CartTable";
+import CartTotal from "../components/CartTotal";
 
 export default function Cart() {    
   return (
@@ -13,8 +16,15 @@ export default function Cart() {
 
       <Header />
       <main>
-        <div>Mercadinho bit</div>
-        <p>Carrinho:</p>
+        <Container className="mb-5">
+          <h1 className="my-5">
+            Carrinho
+          </h1>
+
+          <CartTable/>
+          <CartTotal/>
+
+        </Container>
         
       </main>
     </>
